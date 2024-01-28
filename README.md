@@ -1,27 +1,110 @@
-# Angulardiff
-![alt text](src/assets/slotgame/images/symbol/1.png)
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+# Angular\Pixi Slot game example
+[Donchenko Artem: adkcenter@gmail.com](mailto:adkcenter@gmail.com)
 
-## Development server
+## Install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```cmd
+git clone https://github.com/artdon/angular-pixi-slots.git
+```
+or
+```cmd
+gh repo clone artdon/angular-pixi-slots
+```
+then
+```cmd
+npm i
+```
+## Run
 
-## Code scaffolding
+```cmd
+ng serve --open
+```
+## Other run commands
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[package.json::scripts](package.json)
 
-## Build
+# Configuration
+[globalStorage.ts](src/app/components/slotgame/servise/game/common/globalStorage.ts)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<hr>
 
-## Running unit tests
+```
+REELS_COUNT: 5,
+SYMBOLS_PER_REEL: 4,
+VISIBLE_SYMBOLS: 3,
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![](screens/screen1.jpg)
 
-## Running end-to-end tests
+<hr>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+REELS_COUNT: 6,
+SYMBOLS_PER_REEL: 4,
+VISIBLE_SYMBOLS: 3,
+```
 
-## Further help
+![](screens/screen2.jpg)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<hr>
+
+```
+REELS_COUNT: 6,
+SYMBOLS_PER_REEL: 5,
+VISIBLE_SYMBOLS: 4,
+```
+
+![](screens/screen3.jpg)
+
+<hr>
+
+```
+REELS_COUNT: 10,
+SYMBOLS_PER_REEL: 6,
+VISIBLE_SYMBOLS: 5,
+```
+
+![](screens/screen4.jpg)
+
+## Assets tune
+```
+IMAGE_PATH: './assets/slotgame/images/',
+SYMBOLS_PATH_ID: 'symbol',
+SYMBOL_IMAGE_MANIFEST: {
+symbol1: 'symbol/1.png',
+symbol2: 'symbol/2.png',
+symbol3: 'symbol/3.png',
+symbol4: 'symbol/4.png',
+```
+
+## Animations tune
+```
+START_ALPHA_DURATION: 1,
+REEL_STEP_HEIGHT: 10,
+EXTRA_REEL_STEPS: 3,
+REEL_SPEED_GROW: 5,
+MIN_SPIN_TIME: 2500,
+REEL_TIME_GROW: 500,
+BLUR_MULTIPLY: 150,
+```
+
+## Canvas tune
+```
+antialias: false,
+backgroundAlpha: 1,
+backgroundColor: '0xCCCCCC',
+clearBeforeRender: true,
+context: null,
+hello: false,
+powerPreference: "low-power",
+premultipliedAlpha: false,
+preserveDrawingBuffer: false,
+width: 800,
+height: 600
+```
+
+## INSIDE CONS Do not change
+```
+REEL_WIDTH: 160,
+SYMBOL_SIZE: 150
+```
