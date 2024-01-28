@@ -1,5 +1,5 @@
 # Angular\Pixi\Gsap Slot game example (test task)
-![](screens/ava.png)
+![](screens/_ava.png)
 
 [Donchenko Artem: adkcenter@gmail.com](mailto:adkcenter@gmail.com)
 
