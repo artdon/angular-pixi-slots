@@ -1,4 +1,4 @@
-# Angular\Pixi Slot game example
+# Angular\Pixi\Gsap Slot game example
 [Donchenko Artem: adkcenter@gmail.com](mailto:adkcenter@gmail.com)
 
 ## Install
