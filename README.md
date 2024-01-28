@@ -2,6 +2,7 @@
 ![](screens/ava.png)
 
 [Donchenko Artem: adkcenter@gmail.com](mailto:adkcenter@gmail.com)
+
 ## Install
 
 ```cmd
