@@ -3,7 +3,9 @@
 
 [Donchenko Artem: adkcenter@gmail.com](mailto:adkcenter@gmail.com)
 
-[Live Demo](https://fuzzy-disco-4r9vpvr66r2j9pr.github.dev/) 
+[Live Demo](https://fuzzy-disco-4r9vpvr66r2j9pr-4200.app.github.dev/)
+
+ if Live Demo not active [Fast Run (with out download) Video](https://youtu.be/IFJWDr4fwUY)
 
 ## Install
 
