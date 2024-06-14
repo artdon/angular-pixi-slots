@@ -5,9 +5,23 @@
 
 ### Carefully  
 ``` 
-Look: src/app/components/slotgame
+constructor(private elementRef: ElementRef, private ngZone: NgZone, _slotGameService: SlotGameService) {
+    this.slotGameService = _slotGameService;
+    // runOutsideAngular to save PIXI requestAnimationFrame
+    afterRender(() => {
+      this.ngZone.runOutsideAngular(() => {
+        this.slotGameService.createApp(this.elementRef.nativeElement);
+      });
+    })
+  }
 
 ```
+Look: src/app/components/slotgame
+
+## When You creating a canvas, it must be outside the angular area, otherwise it may lead to performance problems.
+## Or often to ticker conflict problems as pixi, angular, gsap each have owen one. 
+---
+
 
 ## Install
 
